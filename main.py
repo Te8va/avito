@@ -3,13 +3,11 @@ from os import getenv
 
 import dateutil.parser as datetime_parser
 import requests
-from dotenv import load_dotenv
 from flask import Flask, jsonify, request
 from geopy.geocoders import Nominatim
 
 app = Flask(__name__)
 
-load_dotenv()
 
 geolocation = Nominatim(user_agent="Teva")
 
